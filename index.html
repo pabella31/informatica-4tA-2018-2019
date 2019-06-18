@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,7 +8,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="https://lh3.googleusercontent.com/evZCey7lFvkGErE_MV63yRBzvpT5GgABta6Z4x3zNx-O_3iuEiFB5NNHnUJ633ssEgUoKw=s141">
+    <link rel="icon" href="../../favicon.ico">
 
     <title>Starter Template for Bootstrap</title>
 
@@ -30,7 +31,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Pol Abella Montoya</a>
+          <a class="navbar-brand" href="#">Sergi Curtu</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -45,22 +46,70 @@
     <div class="container">
 
       <div class="starter-template">
-        <h1><br>Bevinguts a la meva pagina !</h1>
-        <p class="lead">Asignatura d'Informàtica de 4t d'ESO 2018 - 2019</p>
+        <h1 class="modificar_color"><br>Benvinguts !</h1>
+        <p class="lead">a la meva pàgina web personal </p>
         <p>
             <br> 
-            Hola
+            de l'assignatura d'informàtica de 4t d'ESO
         </p>
       </div>
 
+
+	<h2>Funciona el javascript / jquery ? </h2>
+	
+	<p class="fons_vermell">text de color</p>
+	
+	<p class="fons1">paràgraf 1</p>
+	
+	<p class="fons1">paràgraf 2</p>
+
     </div><!-- /.container -->
+
+	<!-- apliquem estils -->
+	<style>
+		
+		.fons_vermell
+		{
+			background:red ;
+			font-size: 22px ;
+		}
+		
+		.fons1
+		{
+			background:grey ;
+			font-size: 22px ;
+		}
+		
+		.fons2
+		{
+			background:green ;
+			font-size: 40px ;
+		}	
+    </style>
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-3.3.1.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.js"></script>
     <script src="js/bootstrap.js"></script>
     
+	<script>
+			
+			$('p').hover
+			(
+			   function()
+			   { 
+					$(this).removeClass('fons1').addClass('fons2') 
+			   }
+				,
+			   function()
+			   { 
+					$(this).removeClass('fons2').addClass('fons1') 
+			   }
+			)
+			
+	</script>
+
   </body>
 </html>
